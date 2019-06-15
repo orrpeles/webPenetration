@@ -1,0 +1,37 @@
+# use tcpdump bash script to detect and capture packets from interfaces
+
+# First you can use tcpdumpt to display available interfaces on your system:
+sudo tcpdump -D
+
+# Retreive a dump of packets on your screen:
+sudo tcpdump
+# stop using CNTRL-C
+
+# Retrive only 5 packets on your screen:
+sudo tcpdump -c 5
+# see '5 packets captured' screen output
+
+# Display only 5 packets in ASCII format 
+sudo tcpdump -A -c 5
+
+# Display 5 packets in ASCII and Hex format
+sudo tcpdump -XX -c 5
+
+# Save 5 packets to ~/Downloads
+sudo tcpdump -w ~/Downloads/1.pcap -XX -c 5
+#You can add pcap file, system will create it and place output
+
+# To read the file you created, go to ~/Downloads and...
+sudo tcpdump -r 1.pcap
+
+# Then what I found very interesting was capturing IP addresses:
+sudo tcpdump -n -c 5
+
+# And lastly capturing IPs based on TCP port:
+sudo tcpdump -n -c 5 tcp
+
+
+
+
+
+
