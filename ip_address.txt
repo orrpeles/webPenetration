@@ -1,0 +1,16 @@
+# Checking my private and public IP address form CLI
+
+hostname -I
+# displays my private IP address
+
+ifconfig
+# display private IP address and info on all network interfacess currently up
+
+ip addr show
+# display private IP address and info on all network interfacces currently up
+
+curl ifconig.me
+curl ident.me
+wget -qO- ifconfig.me
+
+# display public address by sending an HTTP request
