@@ -1,4 +1,5 @@
 # Checking my private and public IP address form CLI
+# ref: https://www.linuxtrainingacademy.com/determine-public-ip-address-command-line-curl/
 
 hostname -I
 # displays my private IP address
