@@ -1,5 +1,6 @@
 # Checking my private and public IP address form CLI
 # ref: https://www.linuxtrainingacademy.com/determine-public-ip-address-command-line-curl/
+# ref: https://sandilands.info/sgordon/address-spoofing-with-iptables-in-linux
 
 hostname -I
 # displays my private IP address
